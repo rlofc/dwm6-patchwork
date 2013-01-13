@@ -7,16 +7,10 @@ static const char font[]			= "Monaco:size=9:antialias=true:hinting=true";
 static const char colors[NUMCOLORS][ColLast][9] = {
 	/* border	foreground	background */
 	/* gaia2 */
-	//{ "#A3CDC8", "#F9F9F9", "#6D9F99" }, // 1 = normal
-	//{ "#A3CDC8", "#AAAAAA", "#444444" }, // 1 = normal
 	{ "#666666", "#000000", "#333333" }, // 1 = normal
 	{ "#FDBE45", "#FFA905", "#333333" }, // 2 = selected
 	{ "#F54844", "#F54844", "#333333" }, // 3 = urgent
 	{ "#93C724", "#F9F9F9", "#333333" }, // 4 = occupied
-	//{ "#0F2328", "#F2F1F0", "#283A3F" },
-	//{ "#0076F3", "#3A81CD", "#283A3F" },
-	//{ "#DC322F", "#DC322F", "#283A3F" },
-	//{ "#16596A", "#16596A", "#283A3F" },
 };
 static const unsigned int systrayspacing	= 1;	// Systray spacing
 static const unsigned int borderpx			= 2;	// Border pixel of windows
