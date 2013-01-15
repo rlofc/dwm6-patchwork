@@ -2,7 +2,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const char font[]			= "Monaco:size=9:antialias=true:hinting=true";
+static const char font[]			= "Terminus:size=9:antialias=true:hinting=true";
 #define NUMCOLORS 4
 static const char colors[NUMCOLORS][ColLast][9] = {
 	/* border	foreground	background */
