@@ -51,7 +51,7 @@ static const Tag tags[] = {
 static const Rule rules[] = {
 	/*WM_CLASS		WM_CLASS	WM_NAME
 	  class			instance	title				tags mask	isfloating	monitor */
-	{ "Firefox",	NULL,		NULL,				1,			False,		-1 },
+	{ "Chromium",	NULL,		NULL,				1 << 8,			False,		-1 },
 	{ NULL,			NULL,		"Jagex Ltd.",		1 << 1,		True,		-1 },
 	{ NULL,			NULL,		"RuneScape",		1 << 1,		False,		-1 },
 	{ "Skype",		NULL,		NULL,				1 << 1,		False,		-1 },
@@ -73,7 +73,7 @@ static const Rule rules[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *dmenu[]		= { "dmenu_run", "-p", "Uitvoeren:", "-fn", font, "-nb", colors[0][ColBG], "-nf", colors[0][ColFG], "-sb", colors[1][ColBG], "-sf", colors[1][ColFG], NULL };
+static const char *dmenu[]		= { "dmenu_run", "-p", "RUN >>>", "-fn", font, "-nb", colors[0][ColBG], "-nf", colors[0][ColFG], "-sb", colors[1][ColBG], "-sf", colors[1][ColFG], NULL };
 static const char *term[]		= { "urxvt", NULL };
 static const char *browser[]	= { "chromium", NULL };
 static const char *files[]		= { "ranger", NULL };
