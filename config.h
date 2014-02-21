@@ -28,8 +28,8 @@ static const Bool resizehints = False; // True means respect size hints in tiled
 
 static const Layout layouts[] = {
    /* symbol   gaps     arrange */
-   { "   T",   True,    tile     },
    { "   B",   True,    bstack   },
+   { "   T",   True,    tile     },
    { "   M",   False,   monocle  },
    { "   F",   False,   NULL     },
 };
@@ -51,15 +51,15 @@ static const Tag tags[] = {
 static const Rule rules[] = {
    /*WM_CLASS     WM_CLASS WM_NAME
      class        instance title          tags mask   isfloating  monitor */
-   { "Chromium",  NULL,       NULL,          1 << 8,     False,      -1 },
+   { "Firefox",  NULL,       NULL,          1 << 8,     False,      -1 },
    { NULL,        "ncmpcpp",  NULL,          1 << 3,     False,      -1 },
    { "MPlayer",   NULL,       NULL,          1 << 3,     True,       -1 },
-   { "Gimp",      NULL,       NULL,          1 << 3,     False,      -1 },
+   { "Gimp",      NULL,       NULL,          1 << 5,     False,      -1 },
    { "mupdf",     NULL,       NULL,          1 << 4,     False,      -1 },
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define MONKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 { MODKEY,         KEY, view, {.ui = 1 << TAG} }, \
@@ -71,8 +71,8 @@ static const Rule rules[] = {
 /* commands */
 static const char *dmenu[]    = { "dmenu_run", "-p", "RUN >>>", "-fn", font, "-nb", colors[0][ColBG], "-nf", colors[0][ColFG], "-sb", colors[1][ColBG], "-sf", colors[1][ColFG], NULL };
 static const char *term[]     = { "urxvt", NULL };
-static const char *browser[]  = { "chromium", NULL };
-static const char *files[]    = { "ranger", NULL };
+static const char *browser[]  = { "firefox", NULL };
+static const char *files[]    = { "thunar", NULL };
 static const char *music[]    = { "urxvtc", "-name", "ncmpcpp", "-e", "ncmpcpp", NULL };
 static const char *skype[]    = { "skype", NULL };
 static const char *scrot[]    = { "scrot", NULL };
